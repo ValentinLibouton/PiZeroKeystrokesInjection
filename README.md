@@ -1,5 +1,5 @@
 # PiZeroKeystrokesInjection
-This project allows to inject keystrokes such as a keyboard in an automated way
+This project allows to inject keystrokes such as a keyboard in an automated way like the Rubber Ducky from Hak5.org does
 
 ![Image of raspberry](https://github.com/ValentinLibouton/PiZeroKeystrokesInjection/blob/a39c73731001885222457886ab76e68c666727fb/images/rasp2.png?raw=true)
 ![Image of sum symbol](https://github.com/ValentinLibouton/PiZeroKeystrokesInjection/blob/a39c73731001885222457886ab76e68c666727fb/images/plus2.png?raw=true)
