@@ -14,11 +14,6 @@
                 = 'chr(0)+chr(0)+chr(40)+chr(0)+chr(0)+chr(0)+chr(0)+chr(0)'
 """
 
-"""
-    command_dict:
-        indice 0 of value == bit position
-        indice 1 of value == unicode value
-"""
 belgian_keyboard = {
     "CTRL_LEFT":    (1, 0, 0, 0, 0, 0, 0, 0),
     "SHIFT_LEFT":   (2, 0, 0, 0, 0, 0, 0, 0),
