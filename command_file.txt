@@ -1,0 +1,6 @@
+# Comment
+DELAY 1
+STRING Hello World!
+DELAY 1
+STRING Type your scrypt here
+REPEAT 1 4
