@@ -13,7 +13,7 @@ This project allows to inject keystrokes such as a keyboard in an automated way 
 List of commands that can be used in command_file.txt:
 
 - `STRING`  The string following this command will be typed on the keyboard
-- `SLEEP`   The number after this command is the pause delay in second
+- `DELAY`   The number after this command is the pause delay in second
 - `WRITE`   The filename following this command will be read and typed entirely on the keyboard. Here no need to put a "STRING" command.
 - `#`       This entire line will be ignored at runtime. Lines beginning with # are intended for your comments. Can also be used as a log via SSH.
 - `REPLAY` The first number following the REPLAY command is the number of repeats and the second number is the number of rows to repeat
@@ -27,7 +27,7 @@ List of all specific commands:
 ```bash
 Hello World! @#123_°(
 ```
-- `SLEEP 3`
+- `DELAY 3`
 - `WRITE example_file.txt` This example is available in the root
 ```bash
 for i in range(10):

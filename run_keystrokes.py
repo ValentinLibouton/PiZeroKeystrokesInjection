@@ -3,7 +3,7 @@
 # Contact:  pizerokeystrokesinjection.g1uw8@8shield.net
 # Github:   https://github.com/ValentinLibouton
 # Project:  PiZeroKeystrokesInjection
-# V1
+# V2
 
 import conversion
 import time
@@ -58,8 +58,8 @@ def main_list(line):
         print("Blank line")
     elif line.split()[0] == "STRING":
         string_mode(line)
-    elif line.split()[0] == "SLEEP":
-        sleep_mode(line)
+    elif line.split()[0] == "DELAY":
+        delay_mode(line)
     elif line.split()[0] == "WRITE":
         # Not implemented
         write_mode(line)
@@ -89,14 +89,14 @@ def string_mode(line):
                     write_report(unicode_list[i])
 
 
-def sleep_mode(line):
+def delay_mode(line):
     """
     :param line: line of text file
     :return:
     """
-    sleep_time = int(line[len(line.split()[0]) + 1:])  # take time after "SLEEP "
-    print("Sleep time: ", sleep_time)
-    time.sleep(sleep_time)
+    delay_time = int(line[len(line.split()[0]) + 1:])  # take time after "DELAY "
+    print("Delay time: ", delay_time)
+    time.sleep(delay_time)
 
 
 def write_mode(line):
