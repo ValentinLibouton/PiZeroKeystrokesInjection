@@ -106,7 +106,7 @@ def write_mode(line):
     :param line: line of text file
     :return:
     """
-    aux_filename = line[len(line.split()[0]) + 1:]  # take file after "RUN "
+    aux_filename = line[len(line.split()[0]) + 1:]  # take file after "WRITE"
     print("Beginning of writing: ", aux_filename)
     if check_file(aux_filename):
         try:
