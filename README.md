@@ -1,9 +1,9 @@
 # PiZeroKeystrokesInjection
 This project allows to inject keystrokes such as a keyboard in an automated way
 
-![Pict of rasp](https://github.com/ValentinLibouton/Raspberry_Pi_Zero_Keyboard/blob/fb792f6b3351a0845002922485f41fae9bef3387/img/rasp2.png?raw=true)
-![Pict of sum](https://github.com/ValentinLibouton/Raspberry_Pi_Zero_Keyboard/blob/7699baeb8c0465451de5b004ab191de2182f0f87/img/plus2.png?raw=true)
-![Pict of duck](https://github.com/ValentinLibouton/Raspberry_Pi_Zero_Keyboard/blob/4260790cff04c3c310d1ea510978d7d3a16e8522/img/duck2.jpeg?raw=true)
+![Image of raspberry](https://github.com/ValentinLibouton/PiZeroKeystrokesInjection/blob/a39c73731001885222457886ab76e68c666727fb/images/rasp2.png?raw=true)
+![Image of sum symbol](https://github.com/ValentinLibouton/PiZeroKeystrokesInjection/blob/a39c73731001885222457886ab76e68c666727fb/images/plus2.png?raw=true)
+![Image of duck](https://github.com/ValentinLibouton/PiZeroKeystrokesInjection/blob/a39c73731001885222457886ab76e68c666727fb/images/duck2.jpeg?raw=true)
 
 ## Contents
 - [Usage](#big-title)
