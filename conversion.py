@@ -240,9 +240,6 @@ belgian_keyboard = {
 
 
 # To Do List
-accent_grave = ""
-accent_aigu = ""
-tild_char = ""
-cedilla = ""
 
+# accent_grave, accent_aigu, tild_char, cedilla
 # See https://stackoverflow.com/questions/49887540/improve-python-code
