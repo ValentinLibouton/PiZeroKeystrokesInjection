@@ -3,7 +3,8 @@
 # Contact:  pizerokeystrokesinjection.g1uw8@8shield.net
 # Github:   https://github.com/ValentinLibouton
 # Project:  PiZeroKeystrokesInjection
-# V1
+# Version:  V1
+# Date:     03/02/2023
 
 """
     Commands to send to /dev/hidg0

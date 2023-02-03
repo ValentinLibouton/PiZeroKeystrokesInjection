@@ -3,7 +3,8 @@
 # Contact:  pizerokeystrokesinjection.g1uw8@8shield.net
 # Github:   https://github.com/ValentinLibouton
 # Project:  PiZeroKeystrokesInjection
-# V2
+# Version:  V3
+# Date:     03/02/2023
 
 import conversion
 import time
