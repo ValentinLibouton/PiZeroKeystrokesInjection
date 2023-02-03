@@ -40,7 +40,6 @@ def read_file(filename):
         with open(filename, "r") as f:
             for line in f.readlines():
                 main_list(line)
-
     except IOError:
         print("read_file: File doesn't exist")
         return False

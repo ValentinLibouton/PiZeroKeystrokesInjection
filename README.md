@@ -10,7 +10,7 @@ This project allows to inject keystrokes such as a keyboard in an automated way 
 - [Pi Zero setup](#pi-zero-setup)
 - [Options](#options)
 
-## Usage <a name="#usage"></a>
+## Usage
 List of commands that can be used in command_file.txt:
 
 - `STRING`  The string following this command will be typed on the keyboard
