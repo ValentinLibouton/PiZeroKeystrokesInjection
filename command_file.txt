@@ -1,6 +1,9 @@
 # Comment
 DELAY 1
 STRING Hello World!
+ENTER
 DELAY 1
-STRING Type your scrypt here
-REPEAT 1 4
+STRING Type your script here
+ENTER
+# Comment: replay the previous 4 lines 2 time
+REPLAY 2 4

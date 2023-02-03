@@ -3,13 +3,14 @@ This project allows to inject keystrokes such as a keyboard in an automated way 
 
 ![image of a duck with a raspberry](https://github.com/ValentinLibouton/PiZeroKeystrokesInjection/blob/bd96f7e9aaae284f0932438f2e56a36b56301500/images/raspduck.png?raw=true)
 
-## Contents
-- [Usage](#big-title)
-- [Examples](#big-title)
-- [Prerequisites](#big-title)
-- [Pi Zero setup](#big-title)
+## Contents 
+- [Usage](#usage)
+- [Examples](#examples)
+- [Prerequisites](#prerequisites)
+- [Pi Zero setup](#pi-zero-setup)
+- [Options](#options)
 
-## Usage
+## Usage <a name="#usage"></a>
 List of commands that can be used in command_file.txt:
 
 - `STRING`  The string following this command will be typed on the keyboard
@@ -185,3 +186,32 @@ Sometimes you might see this warning message saying “USB device not recognized
   sudo python3 RPi_Keyboard_Example.py
   ```
 * Computer N°1: The text editor has been filled
+
+
+## Options
+
+### Automatic execution of keystrokes at boot
+- `1` Copy *autostart.sh* in /home/pi/ directory
+- `2` Copy *autostart.service* in /lib/systemd/system/ directory
+- `3` Run the following commands:
+```bash
+  sudo chmod +x /home/pi/autostart.sh
+  sudo chmod 644 /lib/systemd/system/autostart.service
+  sudo systemctl daemon-reload
+  sudo systemctl enable autostart.service
+  sudo reboot
+```
+If you want to prevent autorun on startup, you can comment out the last line of autostart.sh with `#`
+```bash
+  # python3 /home/pi/run_keystrokes.py
+  ```
+### Run once at boot
+Follow the **Automatic execution of keystrokes at boot** procedure and proceed with one of the examples below:
+For example add at the end of *autostart.sh*:
+```bash
+rm /home/pi/command_file.txt
+```
+or
+```bash
+mv /home/pi/command_file.txt /home/pi/command_file.txt.bak
+```

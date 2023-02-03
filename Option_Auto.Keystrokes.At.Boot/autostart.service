@@ -1,0 +1,15 @@
+[Unit]
+
+Description=AutostartRaspi
+
+After=multi-user.target
+
+[Service]
+
+Type=idle
+WorkingDirectory=/home/pi
+ExecStart=/bin/sh /home/pi/autostart.sh
+
+[Install]
+
+WantedBy=multi-user.target
