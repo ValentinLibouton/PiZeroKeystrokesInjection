@@ -231,8 +231,8 @@ def build_unicode_byte(tuples):
     :return: list of unicode_byte type(list)
     """
     null_char = chr(0)
-    test = ""
-    test += null_char *8
+    release_keys = ""
+    release_keys += null_char * 8
     unicode_byte = ""
     result = []
     if type(tuples[0]) is tuple:
@@ -247,7 +247,7 @@ def build_unicode_byte(tuples):
         for elem in tuples:
             unicode_byte += chr(elem)
         result.append(unicode_byte)
-    result.append(test)
+    result.append(release_keys)
     # print("Ready to send this list of bytes: ", result)
     return result
 
