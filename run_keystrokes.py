@@ -5,7 +5,6 @@
 # Project:  PiZeroKeystrokesInjection
 # Version:  V3
 # Date:     03/02/2023
-import struct
 import conversion
 import time
 write_speed = 0.03
