@@ -13,6 +13,10 @@
     the values contained in these tuples will have to be changed to unicode characters and converted to string
     Ex.: ENTER  = (0, 0, 40, 0, 0, 0, 0, 0)
                 = 'chr(0)+chr(0)+chr(40)+chr(0)+chr(0)+chr(0)+chr(0)+chr(0)'
+    ToDo List:
+        accent_grave, accent_aigu, tild_char, cedilla
+        See https://stackoverflow.com/questions/49887540/improve-python-code
+
 """
 
 belgian_keyboard = {
@@ -239,7 +243,3 @@ belgian_keyboard = {
 }
 
 
-# To Do List
-
-# accent_grave, accent_aigu, tild_char, cedilla
-# See https://stackoverflow.com/questions/49887540/improve-python-code
