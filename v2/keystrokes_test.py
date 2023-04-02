@@ -1,5 +1,6 @@
 import struct
-import keyboard
+
+# import keyboard
 """
     Ce fichier à pour but de faire des tests de
     différentes idées de codes en vue de la V2.
@@ -40,7 +41,7 @@ def test_de_base():
     :return: hexadecimal representation of the 'm' key
     """
     print("Test: 0")
-    char_string = chr(0)+chr(0)+chr(51)+chr(0)+chr(0)+chr(0)+chr(0)+chr(0)
+    char_string = chr(0) + chr(0) + chr(51) + chr(0) + chr(0) + chr(0) + chr(0) + chr(0)
     key = chr_string_to_key(char_string)
 
     print(repr(key))  # affiche "\x00\x003\x00\x00\x00\x00\x00"
@@ -90,8 +91,37 @@ def test_4():
     return key
 
 
-test_de_base()
-test_1()
-test_2()
-# test_3()
-test_4()
+def write_report(report):
+    """
+    This function is the final function that sends the keyboard command to the connected machine
+    :param report: keystroke in unicode format in a variable of type string
+    :return:
+    """
+    with open('/dev/hidg0', 'rb+') as fd:
+        fd.write(report.encode())
+
+
+if __name__ == "__main__":
+    # test_de_base()
+    # test_1()
+    # test_2()
+    # test_3()
+    # test_4()
+
+    # Key 'm' in hex
+    # write_report('\x00\x003\x00\x00\x00\x00\x00')
+    # write_report('\x00\x00\x00\x00\x00\x00\x00')
+
+    # Key 'm' in byte'hex'
+    #with open('/dev/hidg0', 'rb+') as fd:
+    #    fd.write(b'\x00\x00\x003\x00\x00\x00\x00\x00')
+    #with open('/dev/hidg0', 'rb+') as fd:
+    #    fd.write(b'\x00\x00\x00\x00\x00\x00\x00\x00')
+
+
+    # Key 'b'
+    # write_report(chr(0)+chr(0)+chr(5)+chr(0)+chr(0)+chr(0)+chr(0)+chr(0))
+    # write_report(chr(0)+chr(0)+chr(0)+chr(0)+chr(0)+chr(0)+chr(0)+chr(0))
+
+
+
