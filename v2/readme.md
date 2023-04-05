@@ -2,8 +2,31 @@
 
 ## Ideas
 
-- Embed the boot wait command in the autostrat.sh file
-- Simplify the code
+- [Network At Boot](#network-at-boot)
+- [KEYFILE command](#keyfile-command)
+- [Simplify the code](#simplify-the-code)
+- [HID Descriptor](#hid-descriptor)
+
+## Network At Boot
+Easily enable or disable the boot wait from the autostart.sh file
+
+## `KEYFILE` command
+1. Creation of a **kbkey_directory** folder as a library of pre-registered scrypts
+2. Use of the **.kbkey** extension to differentiate `KEYFILE` from the use of the already existing `WRITE` command
+3. Example: see line 6 in the example below
+```code
+DELAY 3
+# This is a comment
+REPLAY 2 6
+CTRL_LEFT s
+CTRL_LEFT ALT_LEFT t
+KEYFILE configure_network.kbkey
+CTRL_LEFT ALT_LEFT DELETE
+ALT_LEFT TAB
+```
+
+## Simplify the code
+Some testing currently in progress in the v2 folder
 
 ## HID Descriptor
 - 0x05 : Utilisation des codes de page standard
