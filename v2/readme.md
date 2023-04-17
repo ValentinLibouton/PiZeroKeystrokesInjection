@@ -5,13 +5,15 @@
 - [Network At Boot](#network-at-boot)
 - [KEYFILE command](#keyfile-command)
 - [Simplify the code](#simplify-the-code)
+- [Installer](#installer)
 - [HID Descriptor](#hid-descriptor)
+
 
 ## Network At Boot
 Easily enable or disable the boot wait from the autostart.sh file
 
 ## `KEYFILE` command
-1. Creation of a **kbkey_directory** folder as a library of pre-registered scrypts
+1. Creation of a **kbkey_directory** folder as a library of pre-registered scripts
 2. Use of the **.kbkey** extension to differentiate `KEYFILE` from the use of the already existing `WRITE` command
 3. Example: see line 6 in the example below
 ```code
@@ -26,7 +28,13 @@ ALT_LEFT TAB
 ```
 
 ## Simplify the code
-Some testing currently in progress in the v2 folder
+- Some testing currently in progress in the v2 folder
+- Rename **command_file.txt** to **inject.kbkey**
+
+## Installer
+- Verification if the files are present at startup, if not installation of these. Also allows the installation of the system.
+- If there is internet, allow the update from github repository
+- Uninstaller
 
 ## HID Descriptor
 - 0x05 : Utilisation des codes de page standard
